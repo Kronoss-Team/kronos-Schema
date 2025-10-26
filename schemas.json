@@ -3,7 +3,8 @@
     "game": "BPSR",
     "version": "0.0.2.0",
     "schema": "https://raw.githubusercontent.com/Kronoss-Team/kronos-Schema/refs/heads/main/bpsr_schema.json",
-    "image": "https://krno.net/assets/bpsr-d_-ojzCO.png"
+    "image": "https://krno.net/assets/bpsr-d_-ojzCO.png",
+    "process_names": ["BPSR.exe", "BPSR_STEAM.exe"]
   },
   {
     "game": "MINECRAFT",
