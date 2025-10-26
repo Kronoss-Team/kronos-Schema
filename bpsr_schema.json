@@ -1,0 +1,286 @@
+[
+  {
+    "name": "Miscellaneous",
+    "icon": "game-icons:perspective-dice-six-faces-random",
+    "content": [
+      {
+        "keybind": null,
+        "name": "Fast Quest",
+        "description": "Speed up quest completion.",
+        "icon": "mdi:clipboard",
+        "enabled": false,
+        "type": "Feature",
+        "callback": {
+          "category": "Player",
+          "feature": "Fast Quest"
+        },
+        "properties": []
+      }
+    ]
+  },
+  {
+    "name": "Combat",
+    "icon": "mdi:sword-cross",
+    "content": [
+      {
+        "keybind": null,
+        "name": "Attack Speed",
+        "tag": "Animation",
+        "description": "Makes you attack faster.",
+        "icon": "mdi:speedometer",
+        "enabled": false,
+        "type": "Feature",
+        "callback": {
+          "category": "Combat",
+          "feature": "Attack Speed"
+        },
+        "properties": [
+          {
+            "name": "Speed",
+            "type": "Slider",
+            "value": 1,
+            "callback": {
+              "category": "Combat",
+              "feature": "Attack Speed",
+              "property": "Speed"
+            },
+            "options": {
+              "min": 1,
+              "max": 20,
+              "step": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Visuals",
+    "icon": "solar:eye-bold",
+    "content": [
+      {
+        "keybind": null,
+        "name": "ESP",
+        "description": "Shows player outlines through walls.",
+        "icon": "solar:eye-bold",
+        "enabled": false,
+        "type": "Feature",
+        "callback": {
+          "category": "Visuals",
+          "feature": "ESP"
+        },
+        "properties": [
+          {
+            "name": "Height",
+            "type": "Slider",
+            "value": 25,
+            "callback": {
+              "category": "Visuals",
+              "feature": "ESP",
+              "property": "Height"
+            },
+            "options": {
+              "min": 1,
+              "max": 200,
+              "step": 1
+            }
+          },
+          {
+            "name": "Width",
+            "type": "Slider",
+            "value": 80,
+            "callback": {
+              "category": "Visuals",
+              "feature": "ESP",
+              "property": "Width"
+            },
+            "options": {
+              "min": 1,
+              "max": 150,
+              "step": 1
+            }
+          },
+          {
+            "name": "Color",
+            "type": "Color",
+            "value": "#823ef0ff",
+            "callback": {
+              "category": "Visuals",
+              "feature": "ESP",
+              "property": "Color"
+            }
+          },
+          {
+            "name": "Filters",
+            "type": "MultiSelection",
+            "value": [2, 10, 1],
+            "callback": {
+              "category": "Visuals",
+              "feature": "ESP",
+              "property": "Filters"
+            },
+            "options": {
+              "items": [
+                { "value": 1, "name": "Monster" },
+                { "value": 2, "name": "NPC" },
+                { "value": 3, "name": "Prompt" },
+                { "value": 8, "name": "Pet" },
+                { "value": 10, "name": "Player" },
+                { "value": 12, "name": "Drop" },
+                { "value": 15, "name": "Trap" },
+                { "value": 16, "name": "Collectable" },
+                { "value": 19, "name": "Vehicle" },
+                { "value": 20, "name": "Toy" }
+              ],
+              "capitalizeLetterOne": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Player",
+    "icon": "mdi:account",
+    "content": [
+      {
+        "keybind": null,
+        "name": "Fly",
+        "description": "Allows the player to fly.",
+        "icon": "mdi:airplane",
+        "enabled": false,
+        "type": "Feature",
+        "callback": {
+          "category": "Player",
+          "feature": "Fly"
+        },
+        "properties": []
+      },
+      {
+        "keybind": null,
+        "name": "Noclip",
+        "description": "Allows the player to move through walls.",
+        "icon": "mdi:wall",
+        "enabled": false,
+        "type": "Feature",
+        "callback": {
+          "category": "Player",
+          "feature": "Noclip"
+        },
+        "properties": []
+      },
+      {
+        "keybind": null,
+        "name": "God Mode",
+        "tag": "Partial",
+        "description": "Makes the player invincible against certain attacks.",
+        "icon": "mdi:shield-star",
+        "enabled": false,
+        "type": "Feature",
+        "callback": {
+          "category": "Player",
+          "feature": "God Mode"
+        },
+        "properties": []
+      },
+      {
+        "keybind": null,
+        "name": "Infinite Stamina",
+        "description": "Makes the player have infinite stamina.",
+        "icon": "mdi:infinity",
+        "enabled": false,
+        "type": "Feature",
+        "callback": {
+          "category": "Player",
+          "feature": "Infinite Stamina"
+        },
+        "properties": []
+      },
+      {
+        "keybind": null,
+        "name": "Movement Speed",
+        "description": "Makes the player move faster.",
+        "icon": "mdi:run-fast",
+        "enabled": false,
+        "type": "Feature",
+        "callback": {
+          "category": "Player",
+          "feature": "Movement Speed"
+        },
+        "properties": [
+          {
+            "name": "Speed",
+            "type": "Slider",
+            "value": 1,
+            "callback": {
+              "category": "Player",
+              "feature": "Movement Speed",
+              "property": "Speed"
+            },
+            "options": {
+              "min": 1,
+              "max": 300,
+              "step": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Settings",
+    "icon": "material-symbols:settings",
+    "content": [
+      {
+        "keybind": null,
+        "name": "UI Theme",
+        "description": "Customize the user interface colors.",
+        "icon": "mdi:palette",
+        "type": "Feature",
+        "properties": [
+          {
+            "name": "Selector",
+            "type": "Selection",
+            "value": "auto",
+            "callback": {
+              "category": "Settings",
+              "feature": "UI Theme",
+              "property": "Theme Selection"
+            },
+            "options": {
+              "items": [
+                { "value": "light", "name": "Light" },
+                { "value": "dark", "name": "Dark" },
+                { "value": "cosmic", "name": "Cosmic" },
+                { "value": "breeze", "name": "Breeze" },
+                { "value": "orange", "name": "Orange" },
+                { "value": "red", "name": "Red" },
+                { "value": "auto", "name": "Auto" }
+              ],
+              "capitalizeLetterOne": true
+            }
+          }
+        ]
+      },
+      {
+        "keybind": null,
+        "name": "Process",
+        "description": "Access logout and session options.",
+        "icon": "mdi:application-cog",
+        "type": "Feature",
+        "properties": [
+          {
+            "name": null,
+            "type": "LogoutButton",
+            "value": null,
+            "callback": {
+              "category": "Settings",
+              "feature": "Process",
+              "property": "Logout"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
